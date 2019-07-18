@@ -1,0 +1,61 @@
+.bg-primary {
+	background-color: $primary-color !important;
+}
+
+.btn-primary {
+	background-color: $primary-color !important;
+	border-color: $primary-color !important;
+	color: $white;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover,
+.show > .btn-primary.dropdown-toggle,
+.show > .btn-primary.dropdown-toggle:focus,
+.show > .btn-primary.dropdown-toggle:hover {
+  background-color: #40a249;
+  color: $white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*
+.btn-primary:hover {
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+}
+
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary:disabled, .btn-primary:disabled:hover, .btn-primary:disabled:focus, .btn-primary:disabled.focus, .btn-primary:disabled:active, .btn-primary:disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary.focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #378C3F;
+  border-color: #378C3F;
+}
+
+.btn-primary.btn-simple {
+  color: #378C3F;
+  border-color: #378C3F;
+}
+
+.btn-primary.btn-simple:hover, .btn-primary.btn-simple:focus, .btn-primary.btn-simple:active {
+  background-color: transparent;
+  color: #40a249;
+  border-color: #40a249;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary.btn-link {
+  color: #378C3F;
+}
+
+.btn-primary.btn-link:hover, .btn-primary.btn-link:focus, .btn-primary.btn-link:active {
+  background-color: transparent;
+  color: #40a249;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+*/

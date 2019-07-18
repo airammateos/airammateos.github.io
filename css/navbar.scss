@@ -1,0 +1,86 @@
+@mixin navbartext {
+  text-transform: uppercase;
+  font-size: 0.7142em;
+  padding: 0.5rem 0.7rem;
+  line-height: 1.625rem;
+}
+
+.navbar {
+  // font-size: 18px;
+  letter-spacing: 1px;
+  padding-top: 0.625rem;
+  // padding-bottom: 0.625rem;
+  // min-height: 53px;
+  // margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+
+  &.navbar-transparent {
+    background-color: transparent !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: $white;
+    // padding-top: 20px;
+  }
+  .navbar-fixed-top {
+    padding: 40px 0;
+    transition: all 0.5s;
+  }
+  
+  &.top-nav-collapse {
+    background: rgba(0, 0, 0, 0.8) !important;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+  }
+
+  .navbar-brand {
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 1.625rem;
+    // padding: 0 0 1.6rem;
+    padding: 0;
+    font-size: 1em;
+  }
+
+  a {
+    vertical-align: middle;
+    color: $white;
+  }
+
+  .navbar-nav {
+    &.navbar-logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 49px;
+      top: -4px;
+    }
+
+    li {
+      height: 1.7em;
+    }
+    
+    a {
+      @include navbartext;
+      @media only screen and (min-width: 768px) {
+        &:after {
+            content: "";
+            display: block;
+            background-color: $primary-color;
+            height: 1px;
+            width: 0%;
+            -webkit-transition: 0.2s width;
+            transition: 0.2s width;
+        }
+        &:hover:after,
+        &.active>:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  li.active>a:after {
+    width: 100%;
+  }
+}
