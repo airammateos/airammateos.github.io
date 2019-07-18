@@ -1,0 +1,118 @@
+$backimg: url('../img/computer-1245714_1920.jpg');
+
+#toppage {
+  width: 100%;
+  height: 100vh;
+  background: $backimg center -160px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: $white;
+}
+
+#toppage:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(44, 44, 44, 0.2);
+  // /* For browsers that do not support gradients */
+  // /* For Safari 5.1 to 6.0 */
+  // /* For Opera 11.1 to 12.0 */
+  // /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(10, 17, 40, 0.6)));
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(10, 17, 40, 0.6));
+  // /* Standard syntax */
+}
+
+#toppage .toppage-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1367px) {
+  #toppage {
+    background-position: center -160px;
+  }  
+}
+/* 
+  ##Device = Laptops, Desktops, iPad Pro
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1366px) {
+  #toppage {
+    background-position: -50px 0;
+  }
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  #toppage {
+    background-position: center 0;
+  }
+}
+/*
+  ##Device = mobile and ipad
+*/
+@media (max-width: 768px) {
+  #toppage {
+    background-position: center 0;
+  }
+}
+
+.profile-image {
+  a {
+    position: relative;
+    &:before {
+      content: "";
+      border: 15px solid rgba(10, 17, 40, 0.6);
+      border-radius: 50%;
+      height: 180px;
+      width: 180px;
+      position: absolute;
+      left: 0;
+      -webkit-animation: pulsate 1.6s ease-out;
+              animation: pulsate 1.6s ease-out;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      opacity: 0.0;
+      z-index: 99;
+    }
+    &:hover img {
+      -webkit-transform: scale(1.06, 1.06);
+              transform: scale(1.06, 1.06);
+    }
+    &:hover:before {
+      -webkit-animation: none;
+              animation: none;
+    }
+  }
+  img {
+    position: relative;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+    border: 15px solid transparent;
+    z-index: 9999;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  }
+}

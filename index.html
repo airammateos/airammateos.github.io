@@ -5,28 +5,31 @@
   <meta charset='UTF-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Airam Mateos</title>
   <meta name='description' content='Airam Mateos presentation page on Github' />
-  <link href='https://fonts.googleapis.com/css?family=Poppins|Raleway|Roboto&display=swap' rel='stylesheet'>
+  <title>Airam Mateos</title>
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins|Raleway|Roboto&display=swap'>
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
     integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
-  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' rel='stylesheet'>
-
-  <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
-  <link href='css/general.css' rel='stylesheet'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css'>
+  <!-- <link rel='stylesheet' href='https://unpkg.com/aos@2.3.1/dist/aos.css'> -->
+  <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css' />
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'> -->
+  <link rel='stylesheet' href='css/general.css'>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-		<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+		<script src='https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js'></script>
+		<script src='https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js'></script>
 	<![endif]-->
 </head>
 
 <body>
-  <header style='display:none !important;'>
+  <header>
     <div class='profile-page sidebar-collapse'>
-      <nav class='navbar navbar-expand-lg fixed-top navbar-transparent navbar-fixed-top bg-primary' color-on-scroll='400'>
+      <nav class='navbar navbar-expand-lg fixed-top navbar-transparent navbar-fixed-top bg-primary'
+        color-on-scroll='400'>
         <div class='container'>
           <div class='navbar-translate'>
             <a class='navbar-brand' href='#' name='back-to-top'>Airam Mateos</a>
@@ -50,8 +53,8 @@
       </nav>
     </div>
   </header>
-  <section id="toppage">
-    <div class="toppage-container">
+  <section id='toppage'>
+    <div data-aos='fade-up' class='toppage-container'>
       <div class='profile-image'>
         <a href='#about' class='smooth-scroll'><img src='img/DSC5704.JPG' alt='Image' /></a>
       </div>
@@ -59,38 +62,178 @@
       <h5 class='category text-white'>FullStack Developer</h5>
     </div>
   </section>
-  <section name='about' class='about col-lg-12 pt-5' style='display:none !important;'>
-    <div class="section-header text-center">
-      <h2 class="title">Something about me</h2>
+  <section name='about' class='about col-lg-12 pt-5'>
+    <div data-aos='fade-up' data-aos-delay='50'
+      class='section-header text-center pb-3'>
+      <h2 class='title'>Something about me</h2>
     </div>
-    <div class='content'>jajaja</div>
+    <div data-aos='fade-up' data-aos-delay='50'
+    class='row col-md-12'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod quis risus eget dictum. Cras porta
+      tincidunt condimentum. Sed nec interdum diam, et ultricies mauris. Nullam non sodales sapien, sed malesuada velit.
+      Etiam sed sodales eros. Sed et velit augue. Sed id lectus placerat, suscipit tellus sed, hendrerit arcu. Ut leo
+      velit, eleifend eu blandit sed, commodo eu justo. Sed a posuere nunc. Fusce justo sem, fringilla non erat sit
+      amet, iaculis accumsan odio.
+      <br>
+      Praesent quis convallis elit, quis eleifend purus. Phasellus sit amet consectetur justo, ac dapibus lectus. Proin
+      congue quam augue, id ornare urna mattis sit amet. In id nibh purus. Sed aliquam orci eu sodales egestas. Sed ut
+      lectus id felis semper malesuada. Duis eleifend consequat arcu, et pellentesque libero aliquam ut.
+    </div>
   </section>
-  <section name='skills' class='skills col-lg-12 pt-5' style='display:none !important;'>
-    <div class="section-header text-center">
-      <h2 class="title">Some of my skills</h2>
+  <section name='skills' class='skills col-lg-12 pt-5'>
+    <div data-aos='fade-up' data-aos-delay='50'
+      class='section-header text-center pb-3'>
+      <h2 class='title'>Some of my skills</h2>
     </div>
-    <div class='content'>jajaja</div>
+    <div data-aos='fade-up' class='row col-md-12'>
+      <div class='col-md-6'>
+        <div class='skill_text'>
+          <h4>Web development Skills</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the
+            industry's standard dummy text.</p>
+        </div>
+        <div class='skill_item_inner'>
+          <div class='single_skill'>
+            <h4>Wordpress</h4>
+            <div class='progress'>
+              <div class='progress-bar' role='progressbar' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100'>
+                <div class='progress_parcent'><span class='counter'>85</span>%</div>
+              </div>
+            </div>
+          </div>
+          <div class='single_skill'>
+            <h4>Php & MySQL</h4>
+            <div class='progress'>
+              <div class='progress-bar' role='progressbar' aria-valuenow='65' aria-valuemin='0' aria-valuemax='100'>
+                <div class='progress_parcent'><span class='counter'>65</span>%</div>
+              </div>
+            </div>
+          </div>
+          <div class='single_skill'>
+            <h4>Html & Css</h4>
+            <div class='progress'>
+              <div class='progress-bar' role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100'>
+                <div class='progress_parcent'><span class='counter'>75</span>%</div>
+              </div>
+            </div>
+          </div>
+          <div class='single_skill'>
+            <h4>JavaScript</h4>
+            <div class='progress'>
+              <div class='progress-bar' role='progressbar' aria-valuenow='95' aria-valuemin='0' aria-valuemax='100'>
+                <div class='progress_parcent'><span class='counter'>95</span>%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-6'>
+        <div class='skill_text'>
+          <h4>Web Design Skills</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the
+            industry's standard dummy text.</p>
+        </div>
+        <div class='skill_item_inner'>
+          <div class='single_skill'>
+            <h4>Creative Design</h4>
+            <div class='progress'>
+              <div class='progress-bar' role='progressbar' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100'>
+                <div class='progress_parcent'><span class='counter'>85</span>%</div>
+              </div>
+            </div>
+          </div>
+          <div class='single_skill'>
+            <h4>Photoshop</h4>
+            <div class='progress'>
+              <div class='progress-bar' role='progressbar' aria-valuenow='65' aria-valuemin='0' aria-valuemax='100'>
+                <div class='progress_parcent'><span class='counter'>65</span>%</div>
+              </div>
+            </div>
+          </div>
+          <div class='single_skill'>
+            <h4>Illustrator</h4>
+            <div class='progress'>
+              <div class='progress-bar' role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100'>
+                <div class='progress_parcent'><span class='counter'>75</span>%</div>
+              </div>
+            </div>
+          </div>
+          <div class='single_skill'>
+            <h4>Photography</h4>
+            <div class='progress'>
+              <div class='progress-bar' role='progressbar' aria-valuenow='95' aria-valuemin='0' aria-valuemax='100'>
+                <div class='progress_parcent'><span class='counter'>95</span>%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section name='education' class='education col-lg-12 pt-5' style='display:none !important;'>
-    <div class="section-header text-center">
-      <h2 class="title">Education</h2>
+  <section name='education' class='education col-lg-12 pt-5 pb-3'>
+    <div data-aos='fade-up' data-aos-delay='50'
+      class='section-header text-center pb-3'>
+      <h2 class='title'>Education</h2>
     </div>
-    <div class='content'>jajaja</div>
+    <div class='education_area row col-md-12'>
+      <div data-aos='fade-up' data-aos-delay='50'
+       class='education_item col-md-6 mb-3 p-3' data-line='H'>
+        <h6>2005-2007</h6>
+        <h4>Secondary School</h4>
+        <h5>St. Nicholas High School</h5>
+        <p>Lorem ipsum dolor sit amets, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+      <div data-aos='fade-up' data-aos-delay='50'
+       class='education_item col-md-6 mt-10 mb-3 p-3' data-line='E'>
+        <h6>2005-2007</h6>
+        <h4>Secondary School</h4>
+        <h5>St. Nicholas High School</h5>
+        <p>Lorem ipsum dolor sit amets, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+      <div data-aos='fade-up' data-aos-delay='50'
+       class='education_item col-md-6 mb-3 p-3' data-line='L'>
+        <h6>2005-2007</h6>
+        <h4>Secondary School</h4>
+        <h5>St. Nicholas High School</h5>
+        <p>Lorem ipsum dolor sit amets, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+      <div data-aos='fade-up' data-aos-delay='50'
+       class='education_item col-md-6 mt-10 mb-3 p-3' data-line='L'>
+        <h6>2005-2007</h6>
+        <h4>Secondary School</h4>
+        <h5>St. Nicholas High School</h5>
+        <p>Lorem ipsum dolor sit amets, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+      <div data-aos='fade-up' data-aos-delay='50'
+       class='education_item col-md-6 mb-3 p-3' data-line='O'>
+        <h6>2005-2007</h6>
+        <h4>Secondary School</h4>
+        <h5>St. Nicholas High School</h5>
+        <p>Lorem ipsum dolor sit amets, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+    </div>
   </section>
-  <section name='experience' class='experience col-lg-12 pt-5' style='display:none !important;'>
-    <div class="section-header text-center">
-      <h2 class="title">Experience</h2>
+  <section name='experience' class='experience col-lg-12 pt-5'>
+    <div data-aos='fade-up' data-aos-delay='50'
+      class='section-header text-center pb-3'>
+      <h2 class='title'>Experience</h2>
     </div>
-    <div class='content'>jajaja</div>
+    <div class='row col-md-12'>jajaja</div>
   </section>
-  <section name='contact' class='contact col-lg-12 pt-5' style='display:none !important;'>
-    <div class="section-header text-center">
-      <h2 class="title">Contact me!</h2>
+  <section name='contact' class='contact col-lg-12 pt-5'>
+    <div data-aos='fade-up' data-aos-delay='50'
+      class='section-header text-center pb-3'>
+      <h2 class='title'>Contact me!</h2>
     </div>
-    <div class='content'>jajaja</div>
+    <div class='row col-md-12'>jajaja</div>
   </section>
 
-  <footer class='footer pt-3 pb-3' style='display:none !important;'>
+  <footer class='footer pt-3 pb-3 mt-5'>
     <div class='button-container text-center'>
       <a class='btn btn-default btn-round btn-lg btn-icon' href='#' rel='tooltip' title='Follow me on Twitter'><i
           class='fa fa-twitter'></i></a>
@@ -101,10 +244,9 @@
     </div>
   </footer>
 
-  <div name='back-to-top' class="back-to-top"></div>
+  <div name='back-to-top' class='back-to-top'></div>
 
-  <script src='https://code.jquery.com/jquery-3.4.1.min.js'
-    crossorigin='anonymous'></script>
+  <script src='https://code.jquery.com/jquery-3.4.1.min.js' crossorigin='anonymous'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
     integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1'
     crossorigin='anonymous'></script>
@@ -112,9 +254,10 @@
     integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM'
     crossorigin='anonymous'></script>
 
-  <!-- <script src='js/now-ui-kit.min.js'></script> -->
-  <!-- <script src="js/jquery.easing.min.js"></script> -->
-  <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+  <!-- <script src='js/jquery.easing.min.js'></script> -->
+  <!-- <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script> -->
+  <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+  <script src='js/jquery.waypoints.min.js'></script>
   <script src='js/general.js'></script>
 </body>
 

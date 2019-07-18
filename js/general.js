@@ -1,6 +1,9 @@
 $(document).ready(function() {
   AOS.init({
-    once: false
+    once: false,
+    mirror: false,
+    duration: 1000,
+    easing: 'ease-in-out'
   });
 
   $.fn.setActiveMenu = function() {
@@ -63,5 +66,17 @@ $(document).ready(function() {
       }, 400);
     }
   });
-  
+
+  // skill progressbar
+  $(".skill_item_inner").each(function() {
+    $(this).waypoint(function() {
+      $(".progress-bar").each(function(){
+          $(this).css("width", $(this).attr("aria-valuenow") + "%")
+      })
+    }, {
+      triggerOnce: true,
+      offset: 'bottom-in-view'
+    });
+  });
+
 });

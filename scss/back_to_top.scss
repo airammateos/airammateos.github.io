@@ -1,0 +1,26 @@
+.back-to-top {
+  display:none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  // background: #6195FF;
+  background: $primary-color;
+  border-radius:3px;
+  color: $white;
+  z-index: 9999;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+  cursor: pointer;
+  &:after {
+    content: "\f106";
+    font-family: 'FontAwesome';
+  }
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
